@@ -8,7 +8,7 @@ use tokio_websockets::{ClientBuilder, Message};
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error + Send + Sync>> { // Added Send + Sync
-    let server_addr = "ws://127.0.0.1:2000"; // Ensure this matches the server
+    let server_addr = "ws://127.0.0.1:8080";  // Ensure this matches the server
     let uri = server_addr.parse::<Uri>()?;
 
     // The connect() method for ClientBuilder usually returns a tuple:
