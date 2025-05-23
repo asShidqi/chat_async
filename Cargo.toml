@@ -1,0 +1,10 @@
+[package]
+name = "chat_async" # Or your project name
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+futures-util = { version = "0.3.31", features = ["sink"] } # Use version from guide or latest compatible
+http = "1.1.0" # Check for latest compatible version
+tokio = { version = "1.37.0", features = ["full"] } # Use version from guide or latest compatible
+tokio-websockets = { version = "0.11.4", features = ["client", "fastrand", "server", "sha1_smol"] } # Use version from guide or latest compatible
